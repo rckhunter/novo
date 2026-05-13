@@ -1,2 +1,3 @@
 import { AppShell } from "@/components/layout/app-shell";
-export default function Page(){return <AppShell><div className="glass rounded-xl p-8"><h2 className="text-2xl font-bold capitalize">attendance Module</h2><p className="text-zinc-400 mt-2">Módulo escalável pronto para regras de negócio, filtros, ranking e workflows.</p></div></AppShell>}
+
+export default function Page(){return <AppShell><section className="glass rounded-2xl p-6"><h3 className="text-xl font-semibold">Attendance + Discipline System</h3><div className="mt-5 grid gap-3 md:grid-cols-4">{[{l:"On-time Rate",v:"96%"},{l:"Late Incidents",v:"3"},{l:"Bootcamp Presence",v:"98%"},{l:"Penalty Points",v:"7"}].map(x=><div key={x.l} className="rounded-xl border border-white/10 bg-white/5 p-4"><p className="text-xs text-zinc-400">{x.l}</p><p className="mt-1 text-2xl font-semibold">{x.v}</p></div>)}</div></section></AppShell>}
