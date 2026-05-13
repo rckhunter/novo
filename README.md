@@ -8,6 +8,9 @@ Plataforma SaaS para gestão competitiva de organizações de Valorant.
 - Recharts
 - Deploy Vercel
 
+## Blueprint de Produto
+- Documento mestre: `docs/SAFEZONE_OS_MASTER_BLUEPRINT.md`
+
 ## Arquitetura
 - `app/`: rotas e layouts (App Router)
 - `components/`: UI reutilizável
