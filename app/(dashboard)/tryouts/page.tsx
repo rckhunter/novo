@@ -1,2 +1,4 @@
 import { AppShell } from "@/components/layout/app-shell";
-export default function Page(){return <AppShell><div className="glass rounded-xl p-8"><h2 className="text-2xl font-bold capitalize">tryouts Module</h2><p className="text-zinc-400 mt-2">Módulo escalável pronto para regras de negócio, filtros, ranking e workflows.</p></div></AppShell>}
+
+const applicants = [{n:"RazeKing", role:"Duelist", status:"Interview"},{n:"Sm0keMind", role:"Controller", status:"VOD Review"},{n:"IvyShot", role:"Initiator", status:"Final Lobby"}];
+export default function Page(){return <AppShell><section className="space-y-4"><div className="glass rounded-2xl p-5"><h3 className="text-lg font-semibold">Tryout Management</h3><p className="text-sm text-zinc-400">Pipeline from application to contract-ready recommendation.</p></div><div className="grid gap-3 md:grid-cols-3">{applicants.map(a=><article key={a.n} className="glass rounded-xl p-4"><p className="text-lg font-medium">{a.n}</p><p className="text-sm text-zinc-400">{a.role}</p><span className="mt-3 inline-block rounded-full bg-cyan-400/15 px-3 py-1 text-xs text-cyan-200">{a.status}</span></article>)}</div></section></AppShell>}
